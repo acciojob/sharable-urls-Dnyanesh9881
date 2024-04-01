@@ -8,6 +8,10 @@ submit.addEventListener("click", ()=>{
 	e.preventDefault();
 
 	if(name.value==""){
-		heading.innerText="https://localhost:8080/"+year
+		text="https://localhost:8080/"+"?"+"year"+year.value;
+	}else if(year.value==""){
+		text="https://localhost:8080/"+"?"+"name"+name.value;
+	}else if(name.value!="" && name.value!==""){
+		text="https://localhost:8080/"+"?"+"name"+name.value+;
 	}
 })
